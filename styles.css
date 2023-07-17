@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+
+
+:root {
+	--bg-color: hsl(30, 38%, 92%);
+	--sec-color: hsl(158, 36%, 37%);
+	--title-color: HSL(212°, 21%, 14%);
+	--text-color: hsl(228, 12%, 48%);
+	--white: hsl(0, 0%, 100%);
+}
+
+* {
+	/*font-family: 'Fraunces', serif;*/
+	font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;   
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 99%;
+  background-color: hsl(30, 38%, 92%);
+}
+
+.container-bg {
+	min-height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: hsl(30, 38%, 92%);
+}
+
+.container-bg .image {
+	height: 30rem;
+	width: 20rem;
+	border-radius: 2rem;
+}
+
+.container-bg .image img {
+	width: 100%;
+	object-fit: cover;
+	border-radius: 1rem 0 0 1rem;
+}
+
+.container-bg .box {
+	height: 30rem;
+	width: 20rem;
+	border-radius: 0 1rem 1rem 0;
+	background-color: hsl(0, 0%, 100%);
+	
+	display: block;
+	align-items: center;
+}
+
+.container-bg .box .heading {
+	font-size: 0.8rem;
+	margin: 2rem 3rem 1.8rem 2rem;
+	color: hsl(228, 12%, 48%);
+	letter-spacing: 0.3rem;
+}
+
+.container-bg .box .content h1 {
+	font-size: 2rem;
+	margin: 0rem 3rem 1.8rem 2rem;
+	color: hsl(212, 21%, 14%);
+	font-family: 'Fraunces', serif;
+	line-height: 2rem;
+}
+
+.container-bg .box .content p {
+	font-size: 0.9rem;
+	margin: 0rem 3rem 1.8rem 2rem;
+	color: hsl(228, 12%, 48%);
+	line-height: 1.5rem;
+}
+
+.container-bg .box .price {
+	margin: 0rem 3rem 1.8rem 2rem;
+	display: flex;
+	align-items: center;
+}
+
+.container-bg .box .price #price1 h1 {
+	color: hsl(158, 36%, 37%);
+	font-family: 'Fraunces', serif;
+	margin-right: 1rem;
+}
+
+.container-bg .box .price #price2 p {
+	color: hsl(228, 12%, 48%);
+	text-decoration: line-through;
+	font-size: 0.8rem;
+}
+
+.container-bg .box .btn {
+	margin: 0 2rem 1.5rem 2rem;
+	background-color: hsl(158, 36%, 37%);
+	padding: 1rem 4rem;
+	color: hsl(0, 0%, 100%);
+	font-size: 0.8rem;
+	border-radius: 0.3rem;
+	font-weight: bold;
+	font-size: 1rem;
+}
+
+.container-bg .box .btn:hover {
+	background-color: hsl(158, 36%, 20%);
+	cursor: pointer;
+}
+
+.attribution { 
+	font-size: 11px; 
+	text-align: center; 
+}
+    
+.attribution a { 
+	color: hsl(228, 45%, 44%); 
+}
+
+
+@media (max-width: 700px){
+	
+	body {
+		padding: 2rem;
+	}
+	
+	.container-bg {
+		display: block;
+		
+		place-items: center;
+		gap: 0;
+		padding:0;
+		margin: 0 auto;
+	}
+
+	.container-bg .image {
+		height: 20rem;
+		width: 25rem;
+		margin: 0;
+		margin: 0 auto;
+	}
+
+	.container-bg .image img {
+		height: 100%;
+		border-radius: 1rem 1rem 0 0;
+		margin: 0 auto;
+	}
+
+	.container-bg .box {
+		height: 100%;
+		width: 25rem;
+		margin: 0 auto 1rem auto;
+		border-radius: 0 0 1rem 1rem;
+		padding: 0.5rem 0 0.5rem 0;
+		display: block;
+		align-content: center;
+	}
+
+	.container-bg .box .heading {
+		margin: 1rem 3rem 1.8rem 2rem;
+	}
+
+	.container-bg .box .btn {
+		width: 40%;
+		margin: 1rem auto;
+	}
+}
+
+@media (max-width: 390px){
+	
+	body {
+		padding: 1rem;
+	}
+	
+	
+	.container-bg .image {
+		width: 22rem;
+		margin: 0 auto;
+	}
+
+
+	.container-bg .box {
+		width: 22rem;
+	}
+
+}
